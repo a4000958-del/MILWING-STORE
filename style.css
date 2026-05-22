@@ -6,10 +6,9 @@
     font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Background Ungu Putih */
 body {
-    background-color: #f5f3ff; /* Ungu sangat muda/soft */
-    color: #1e1b4b; /* Ungu gelap untuk teks */
+    background-color: #f5f3ff;
+    color: #1e1b4b;
     line-height: 1.6;
 }
 
@@ -52,21 +51,49 @@ header {
     color: #4c1d95;
 }
 
-/* Tombol CTA Header */
+.social-headers {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-link {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.dc-link { color: #5865F2; }
+.dc-link:hover { color: #404eed; }
+.wa-channel { color: #25d366; }
+.wa-channel:hover { color: #128c7e; }
+
+.header-admin-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Tombol CTA */
 .cta-btn {
     display: inline-block;
     background-color: #7c3aed;
     color: #ffffff !important;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 50px;
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
     box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.2);
     transition: 0.3s ease;
 }
 
+.admin1-bg { background-color: #7c3aed; }
+.admin1-bg:hover { background-color: #6d28d9; }
+.admin2-bg { background-color: #6366f1; box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2); }
+.admin2-bg:hover { background-color: #4f46e5; }
+
 .cta-btn:hover {
-    background-color: #6d28d9;
     transform: translateY(-2px);
 }
 
@@ -95,7 +122,26 @@ header {
     margin: 0 auto 25px auto;
 }
 
-/* Judul Bagian */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-buttons .cta-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.secondary-btn {
+    background-color: #25d366;
+    box-shadow: 0 4px 6px -1px rgba(37, 211, 102, 0.2);
+}
+.secondary-btn:hover {
+    background-color: #128c7e;
+}
+
+/* Section Title */
 .section-title {
     text-align: center;
     margin: 50px 0 30px 0;
@@ -111,7 +157,7 @@ header {
     gap: 25px;
 }
 
-/* Kartu Produk */
+/* Kartu */
 .card {
     background-color: white;
     border: 1px solid #e9d5ff;
@@ -132,7 +178,7 @@ header {
 }
 
 .full-width {
-    grid-column: 1 / -1; /* Membuat kartu nokos memenuhi baris atas */
+    grid-column: 1 / -1;
 }
 
 .badge {
@@ -172,7 +218,7 @@ header {
     color: #9ca3af;
 }
 
-/* Search Box Nokos */
+/* Search Box */
 #searchCountry {
     width: 100%;
     padding: 12px;
@@ -188,7 +234,7 @@ header {
     border-color: #7c3aed;
 }
 
-/* Grid Negara Nokos */
+/* Country Grid */
 .country-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -197,7 +243,7 @@ header {
     padding: 15px;
     border-radius: 12px;
     max-height: 220px;
-    overflow-y: auto; /* Kasih scroll kalau kepanjangan */
+    overflow-y: auto;
     border: 1px solid #e9d5ff;
 }
 
@@ -246,13 +292,17 @@ header {
     font-weight: bold;
 }
 
-/* Tombol Beli */
+/* Struktur Tombol Admin Kembar */
+.dual-buy-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
 .buy-btn {
     display: block;
     text-align: center;
     background-color: #ffffff;
-    color: #7c3aed;
-    border: 2px solid #7c3aed;
     padding: 12px;
     border-radius: 10px;
     text-decoration: none;
@@ -260,10 +310,11 @@ header {
     transition: 0.2s ease;
 }
 
-.buy-btn:hover {
-    background-color: #7c3aed;
-    color: white;
-}
+.b-admin1 { color: #7c3aed; border: 2px solid #7c3aed; }
+.b-admin1:hover { background-color: #7c3aed; color: white; }
+
+.b-admin2 { color: #6366f1; border: 2px solid #6366f1; }
+.b-admin2:hover { background-color: #6366f1; color: white; }
 
 /* Info Box */
 .info-box {
@@ -297,5 +348,8 @@ footer {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 26px; }
+    .hero-buttons { flex-direction: column; gap: 10px; }
     header { flex-direction: column; gap: 15px; text-align: center; }
+    .social-headers { flex-direction: column; gap: 10px; }
+    .dual-buy-buttons { grid-template-columns: 1fr; gap: 8px; }
 }

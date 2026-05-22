@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MILWING STORE - Nokos, Akun Premium & Web Custom</title>
+    <title>MELWING STORE - Nokos, Akun Premium & Service Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,33 +13,41 @@
         <header>
             <div class="logo-container">
                 <img src="logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
-                <div class="logo-text">MILWING<span>STORE</span></div>
+                <div class="logo-text">MELWING<span>STORE</span></div>
             </div>
-            <a href="https://wa.me/62882008753937" target="_blank" class="cta-btn">Hubungi Admin</a>
+            <div class="social-headers">
+                <a href="#" target="_blank" class="https://discord.gg/9czY7wPg2">🌐 Grup Discord</a>
+                <a href="#" target="_blank" class="https://whatsapp.com/channel/0029VbBI3Ne8PgsJj1Aze00S">📢 Saluran WA</a>
+                <div class="header-admin-buttons">
+                    <a href="https://wa.me/62882008753937" target="_blank" class="cta-btn admin1-bg">Admin 1</a>
+                    <a href="https://wa.me/62895355121060" target="_blank" class="cta-btn admin2-bg">Admin 2</a>
+                </div>
+            </div>
         </header>
 
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Nokos All Negara, Akun Premium & Jasa Web</h1>
-            <p>Proses super kilat, produk selalu ready setiap hari, dan harga dijamin paling ramah di kantong. Pilih produkmu dan langsung order via WhatsApp.</p>
-            <a href="#produk" class="cta-btn">Lihat List Produk</a>
+            <h1>All-in-One Service Sosmed & Digital Store</h1>
+            <p>Sedia Nokos All Negara, Akun Premium, Jasa Build Server Discord, Convert Saldo, hingga Script Web Murah. Pilih admin yang sedang online untuk respon lebih cepat!</p>
+            <div class="hero-buttons">
+                <a href="#produk" class="cta-btn">Lihat List Produk</a>
+                <a href="#" target="_blank" class="cta-btn secondary-btn">Gabung Saluran WA</a>
+            </div>
         </section>
 
         <!-- Main Products -->
-        <h2 class="section-title" id="produk">Kategori Produk</h2>
+        <h2 class="section-title" id="produk">Kategori Produk & Layanan</h2>
         
         <div class="grid">
-            <!-- Produk 1: Nokos -->
+            <!-- Produk 1: Nokos (Full Row) -->
             <div class="card full-width">
                 <div class="badge">Terlaris</div>
                 <h3>Nokos (Nomor Kosong) All Negara</h3>
-                <p class="subtitle">Bisa untuk bypass OTP Telegram, WhatsApp, Twitter, dll. Garansi kode masuk!</p>
-                <div class="price">Mulai Rp 3.000 <span class="unit">/biji</span></div>
+                <p class="subtitle">Bisa untuk tebus kode OTP Telegram, WhatsApp, Twitter, dll. Garansi kode masuk!</p>
+                <div class="price">Mulai Rp 6.000 <span class="unit">/biji</span></div>
                 
-                <!-- Input Cari Negara -->
-                <input type="text" id="searchCountry" placeholder="🔍 Cari negara... (Contoh: Rusia, Amerika)">
+                <input type="text" id="searchCountry" placeholder="🔍 Cari negara... (Contoh: Rusia, Amerika, Malaysia)">
 
-                <!-- List Negara Lengkap -->
                 <div class="country-grid" id="countryList">
                     <div class="country-item" data-name="indonesia"><span class="flag">🇮🇩</span> Indonesia</div>
                     <div class="country-item" data-name="malaysia"><span class="flag">🇲🇾</span> Malaysia</div>
@@ -56,34 +64,77 @@
                     <div class="country-item" data-name="india"><span class="flag">🇮🇳</span> India</div>
                     <div class="country-item" data-name="jerman"><span class="flag">🇩🇪</span> Jerman</div>
                     <div class="country-item" data-name="prancis"><span class="flag">🇫🇷</span> Prancis</div>
-                    <div class="country-item" data-name="kanada"><span class="flag">🇨🇦</span> Kanada</div>
-                    <div class="country-item" data-name="australia"><span class="flag">🇦🇺</span> Australia</div>
-                    <div class="country-item" data-name="brazil"><span class="flag">🇧🇷</span> Brazil</div>
                     <div class="country-item" data-name="turki"><span class="flag">🇹🇷</span> Turki</div>
                     <div class="country-item" data-name="arab saudi"><span class="flag">🇸🇦</span> Arab Saudi</div>
                 </div>
 
-                <a href="https://wa.me/62882008753937?text=Halo%20Gan,%20mau%20order%20Nokos%20Negara" id="nokosBtn" target="_blank" class="buy-btn" style="margin-top: 20px;">Beli Nokos via WA</a>
+                <div class="dual-buy-buttons" style="margin-top: 20px;">
+                    <a href="https://wa.me/62882008753937?text=Halo%20Admin%201,%20mau%20order%20Nokos%20Negara" id="nokosBtn1" target="_blank" class="buy-btn b-admin1">Beli via Admin 1</a>
+                    <a href="https://wa.me/62895355121060?text=Halo%20Admin%202,%20mau%20order%20Nokos%20Negara" id="nokosBtn2" target="_blank" class="buy-btn b-admin2">Beli via Admin 2</a>
+                </div>
             </div>
 
-            <!-- Produk 2: website blast wa -->
+            <!-- Produk 2: Build Server Discord -->
+            <div class="card">
+                <div>
+                    <div class="badge" style="background: #5865F2;">Discord</div>
+                    <h3>Setup / Build Server Discord</h3>
+                    <p class="subtitle">Jasa pembuatan server Discord untuk komunitas gaming, tempat nongkrong, atau toko jualan online.</p>
+                    <div class="price">Mulai Rp 6.000 <span class="unit">/server</span></div>
+                    <ul class="features">
+                        <li>Merapikan Roles, Room, & Kategori</li>
+                        <li>Setup Bot Music, Welcome, & Otomatisasi</li>
+                        <li>Sistem Keamanan Anti-Raid / Bot Jahat</li>
+                        <li>Desain Tampilan Estetik & Rapih</li>
+                    </ul>
+                </div>
+                <div class="dual-buy-buttons">
+                    <a href="https://wa.me/62882008753937?text=Halo%20Admin%201,%20mau%20order%20Jasa%20Build%20Server%20Discord%20dong" target="_blank" class="buy-btn b-admin1">Admin 1</a>
+                    <a href="https://wa.me/62895355121060?text=Halo%20Admin%202,%20mau%20order%20Jasa%20Build%20Server%20Discord%20dong" target="_blank" class="buy-btn b-admin2">Admin 2</a>
+                </div>
+            </div>
+
+            <!-- Produk 3: Convert Saldo -->
+            <div class="card">
+                <div>
+                    <div class="badge" style="background: #0ea5e9;">E-Wallet</div>
+                    <h3>Convert / Jasa Tukar Saldo</h3>
+                    <p class="subtitle">Melayani tukar saldo antar e-wallet atau cairkan pulsa ke saldo secara aman.</p>
+                    <div class="price">Rate Bersahabat <span class="unit">/transaksi</span></div>
+                    <ul class="features">
+                        <li>Sedia DANA, GOPAY, OVO, LinkAja</li>
+                        <li>Bisa convert Pulsa ke E-Wallet</li>
+                        <li>Proses pencairan langsung cair hitungan menit</li>
+                        <li>Potongan atau rate dijamin tipis</li>
+                    </ul>
+                </div>
+                <div class="dual-buy-buttons">
+                    <a href="https://wa.me/62882008753937?text=Halo%20Admin%201,%20mau%20convert%20saldo%20bisa?" target="_blank" class="buy-btn b-admin1">Admin 1</a>
+                    <a href="https://wa.me/62895355121060?text=Halo%20Admin%202,%20mau%20convert%20saldo%20bisa?" target="_blank" class="buy-btn b-admin2">Admin 2</a>
+                </div>
+            </div>
+
+            <!-- Produk 4: Jasa Web -->
             <div class="card">
                 <div>
                     <div class="badge" style="background: #e11d48;">Promo</div>
-                    <h3>Web Blast wa</h3>
-                    <p class="subtitle">Source website blast wa rate 700p sama 600p.</p>
-                    <div class="price">Rp 5.000 <span class="unit">/file</span></div>
+                    <h3>website blast wa </h3>
+                    <p class="subtitle">Source code template website jualan, landing page produk, atau portofolio simpel.</p>
+                    <div class="price">Rp 5.000 <span class="unit">/website</span></div>
                     <ul class="features">
-                        <li>Admin fast respon</li>
-                        <li>gak gampang kenon</li>
-                        <li>di kasi setingan biar ga gampang kenon</li>
-                        <li>Admin gantenk</li>
+                        <li>Dikasi tutorial login</li>
+                        <li>bisa di nseting per pesan</li>
+                        <li>WD gak sampe 1 jam</li>
+                        <li>ADMIN SELALU GANTENK</li>
                     </ul>
                 </div>
-                <a href="https://wa.me/62882008753937?text=Halo%20Gan,%20mau%20beli%20Web%20yang%20harga%205k" target="_blank" class="buy-btn">Beli Web via WA</a>
+                <div class="dual-buy-buttons">
+                    <a href="https://wa.me/62882008753937?text=Halo%20Admin%201,%20mau%20beli%20Web%20yang%20harga%205k" target="_blank" class="buy-btn b-admin1">Admin 1</a>
+                    <a href="https://wa.me/62895355121060?text=Halo%20Admin%202,%20mau%20beli%20Web%20yang%20harga%205k" target="_blank" class="buy-btn b-admin2">Admin 2</a>
+                </div>
             </div>
 
-            <!-- Produk 3: Akun Premium -->
+            <!-- Produk 5: Akun Premium -->
             <div class="card">
                 <div>
                     <div class="badge" style="background: #10b981;">Resmi</div>
@@ -97,7 +148,10 @@
                         <li>Garansi penuh selama masa aktif</li>
                     </ul>
                 </div>
-                <a href="https://wa.me/62882008753937?text=Halo%20Gan,%20mau%20lihat%20list%20harga%20akun%20premium%20dong" target="_blank" class="buy-btn">Beli Akun via WA</a>
+                <div class="dual-buy-buttons">
+                    <a href="https://wa.me/62882008753937?text=Halo%20Admin%201,%20mau%20lihat%20list%20harga%20akun%20premium%20dong" target="_blank" class="buy-btn b-admin1">Admin 1</a>
+                    <a href="https://wa.me/62895355121060?text=Halo%20Admin%202,%20mau%20lihat%20list%20harga%20akun%20premium%20dong" target="_blank" class="buy-btn b-admin2">Admin 2</a>
+                </div>
             </div>
         </div>
 
@@ -105,22 +159,22 @@
         <h2 class="section-title">Kenapa Beli Di Sini?</h2>
         <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 20px;">
             <div class="info-box">
-                <h4>⚡ Proses Kilat</h4>
-                <p>Gak pakai nunggu lama. Begitu transferan masuk, produk langsung diproses admin.</p>
+                <h4>⚡ Jaminan Fast Respon</h4>
+                <p>Dengan 2 admin aktif, chat kamu bakal jauh lebih cepat dibalas dan diproses tanpa antre lama.</p>
             </div>
             <div class="info-box">
                 <h4>🛡️ Full Garansi</h4>
-                <p>Ada kendala login atau OTP macet? Langsung chat admin buat klaim garansi ganti baru.</p>
+                <p>Ada kendala login, pengerjaan, atau OTP macet? Langsung hubungi salah satu admin untuk klaim garansi.</p>
             </div>
             <div class="info-box">
                 <h4>💰 Harga Termurah</h4>
-                <p>Harga bersaing ketat, cocok banget buat dipake sendiri atau dijual kembali (reseller).</p>
+                <p>Harga bersaing ketat, cocok banget buat dipake sendiri atau dijual kembali (reseller welcome).</p>
             </div>
         </div>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2026 MILWING STORE. All Rights Reserved. Trusted Seller.</p>
+            <p>&copy; 2026 melwing Store. All Rights Reserved. Trusted Seller Team.</p>
         </footer>
     </div>
 

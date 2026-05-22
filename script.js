@@ -30,23 +30,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Fitur Klik Negara langsung ganti isi teks WhatsApp otomatis
-    const nokosBtn = document.getElementById("nokosBtn");
+    // Fitur Klik Negara Nokos otomatis ganti teks WA untuk KEDUA Admin
+    const nokosBtn1 = document.getElementById("nokosBtn1");
+    const nokosBtn2 = document.getElementById("nokosBtn2");
+    
     countryItems.forEach(item => {
         item.addEventListener("click", function () {
-            // Hapus status select dari negara lain
             countryItems.forEach(i => i.classList.remove("selected"));
-            
-            // Tambahkan class selected ke negara yang di-klik
             this.classList.add("selected");
             
-            // Ambil nama negara dan set teks WA baru
             const selectedCountry = this.innerText.trim();
-            const waBaseUrl = "https://wa.me/62882008753937?text=";
-            const textCustom = encodeURIComponent(`Halo Gan, saya mau order Nokos Negara ${selectedCountry} dong`);
+            const waBaseUrl1 = "https://wa.me/62882008753937?text=";
+            const waBaseUrl2 = "https://wa.me/62895355121060?text=";
             
-            nokosBtn.href = waBaseUrl + textCustom;
-            nokosBtn.innerText = `Beli Nokos (${selectedCountry}) via WA`;
+            const textCustom1 = encodeURIComponent(`Halo Admin 1, saya mau order Nokos Negara ${selectedCountry} dong`);
+            const textCustom2 = encodeURIComponent(`Halo Admin 2, saya mau order Nokos Negara ${selectedCountry} dong`);
+            
+            nokosBtn1.href = waBaseUrl1 + textCustom1;
+            nokosBtn1.innerText = `Admin 1 (${selectedCountry})`;
+            
+            nokosBtn2.href = waBaseUrl2 + textCustom2;
+            nokosBtn2.innerText = `Admin 2 (${selectedCountry})`;
         });
     });
 });
