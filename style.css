@@ -1,0 +1,301 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Background Ungu Putih */
+body {
+    background-color: #f5f3ff; /* Ungu sangat muda/soft */
+    color: #1e1b4b; /* Ungu gelap untuk teks */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #e9d5ff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7c3aed;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 800;
+    color: #7c3aed;
+}
+
+.logo-text span {
+    color: #4c1d95;
+}
+
+/* Tombol CTA Header */
+.cta-btn {
+    display: inline-block;
+    background-color: #7c3aed;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.2);
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #6d28d9;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 25px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9d5ff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #4c1d95;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+}
+
+/* Judul Bagian */
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    font-size: 26px;
+    color: #4c1d95;
+    font-weight: 700;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Kartu Produk */
+.card {
+    background-color: white;
+    border: 1px solid #e9d5ff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.1);
+    border-color: #c084fc;
+}
+
+.full-width {
+    grid-column: 1 / -1; /* Membuat kartu nokos memenuhi baris atas */
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #7c3aed;
+    color: white;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #1e1b4b;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 800;
+    color: #7c3aed;
+    margin: 10px 0;
+}
+
+.unit {
+    font-size: 14px;
+    font-weight: normal;
+    color: #9ca3af;
+}
+
+/* Search Box Nokos */
+#searchCountry {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #e9d5ff;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#searchCountry:focus {
+    border-color: #7c3aed;
+}
+
+/* Grid Negara Nokos */
+.country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    background: #faf5ff;
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 220px;
+    overflow-y: auto; /* Kasih scroll kalau kepanjangan */
+    border: 1px solid #e9d5ff;
+}
+
+.country-item {
+    background: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: 1px solid #f3e8ff;
+    transition: 0.2s;
+}
+
+.country-item:hover, .country-item.selected {
+    background: #7c3aed;
+    color: white;
+    border-color: #7c3aed;
+}
+
+.flag {
+    font-size: 16px;
+}
+
+/* List Fitur */
+.features {
+    list-style: none;
+    margin: 15px 0 25px 0;
+}
+
+.features li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.features li::before {
+    content: "✓";
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Tombol Beli */
+.buy-btn {
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    color: #7c3aed;
+    border: 2px solid #7c3aed;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #7c3aed;
+    color: white;
+}
+
+/* Info Box */
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #7c3aed;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.info-box h4 {
+    margin-bottom: 5px;
+    color: #4c1d95;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 2px solid #e9d5ff;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 26px; }
+    header { flex-direction: column; gap: 15px; text-align: center; }
+}
